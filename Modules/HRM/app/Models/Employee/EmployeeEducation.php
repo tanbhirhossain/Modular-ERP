@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\HRM\Models\Employee;
+namespace Modules\HRM\app\Models\Employee;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class EmployeeEducation extends Model
 {
     use HasFactory;
+    protected $table = 'employee_educations';
+
 
     /**
      * The attributes that are mass assignable.
